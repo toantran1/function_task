@@ -47,7 +47,7 @@
 
             <!-- item-->
             <a href="javascript:void(0);" class="flex items-center py-2 px-3 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
-                <img class="me-2 rounded-full h-8" src="images/users/avatar-2.jpg" alt="Generic placeholder image">
+                <img class="me-2 rounded-full h-8" src="{!! asset('images/users/avatar-2.jpg') !!}" alt="Generic placeholder image">
                 <div class="flex-grow">
                     <h5 class="m-0 fs-14">Erwin Brown</h5>
                     <span class="fs-12 ">UI Designer</span>
@@ -56,7 +56,7 @@
 
             <!-- item-->
             <a href="javascript:void(0);" class="flex items-center py-2 px-3 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
-                <img class="me-2 rounded-full h-8" src="images/users/avatar-5.jpg" alt="Generic placeholder image">
+                <img class="me-2 rounded-full h-8" src="{!! asset('images/users/avatar-5.jpg') !!}" alt="Generic placeholder image">
                 <div class="flex-grow">
                     <h5 class="m-0 fs-14">Jacob Deo</h5>
                     <span class="fs-12 ">Developer</span>
@@ -69,7 +69,7 @@
     <div class="relative ms-auto">
         <button data-fc-type="dropdown" data-fc-placement="bottom-end" type="button" class="nav-link p-2 fc-dropdown">
             <span class="flex items-center gap-2">
-                <img src="images/flags/us.jpg" alt="flag-image" class="h-3">
+                <img src="{!! asset('images/flags/us.jpg') !!}" alt="flag-image" class="h-3">
                 <div class="lg:block hidden">
                     <span>English</span>
                     <i class="ri-arrow-down-s-line"></i>
@@ -81,25 +81,25 @@
         <div class="fc-dropdown fc-dropdown-open:opacity-100 hidden opacity-0 w-40 z-50 transition-all duration-300 bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 rounded-lg py-2">
             <!-- item-->
             <a href="javascript:void(0);" class="flex items-center gap-2.5 py-2 px-3 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
-                <img src="images/flags/germany.jpg" alt="user-image" class="h-4">
+                <img src="{!! asset('images/flags/germany.jpg') !!}" alt="user-image" class="h-4">
                 <span class="align-middle">German</span>
             </a>
 
             <!-- item-->
             <a href="javascript:void(0);" class="flex items-center gap-2.5 py-2 px-3 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
-                <img src="images/flags/italy.jpg" alt="user-image" class="h-4">
+                <img src="{!! asset('images/flags/italy.jpg') !!}" alt="user-image" class="h-4">
                 <span class="align-middle">Italian</span>
             </a>
 
             <!-- item-->
             <a href="javascript:void(0);" class="flex items-center gap-2.5 py-2 px-3 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
-                <img src="images/flags/spain.jpg" alt="user-image" class="h-4">
+                <img src="{!! asset('images/flags/spain.jpg') !!}" alt="user-image" class="h-4">
                 <span class="align-middle">Spanish</span>
             </a>
 
             <!-- item-->
             <a href="javascript:void(0);" class="flex items-center gap-2.5 py-2 px-3 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
-                <img src="images/flags/russia.jpg" alt="user-image" class="h-4">
+                <img src="{!! asset('images/flags/russia.jpg') !!}" alt="user-image" class="h-4">
                 <span class="align-middle">Russian</span>
             </a>
         </div>
@@ -165,7 +165,7 @@
                     <div class="py-2 px-3 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
                         <div class="flex items-center">
                             <div class="flex-shrink-0">
-                                <img src="images/users/avatar-2.jpg" class="rounded-full h-9 w-9" alt="">
+                                <img src="{!! asset('images/users/avatar-2.jpg') !!}" class="rounded-full h-9 w-9" alt="">
                             </div>
                             <div class="flex-grow truncate ms-2">
                                 <h5 class="text-sm font-semibold mb-1">Cristina Pride <small class="font-normal ms-1">1 day ago</small></h5>
@@ -197,7 +197,7 @@
                     <div class="py-2 px-3 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
                         <div class="flex items-center">
                             <div class="flex-shrink-0">
-                                <img src="images/users/avatar-4.jpg" class="rounded-full h-9 w-9" alt="">
+                                <img src="{!! asset('images/users/avatar-4.jpg') !!}" class="rounded-full h-9 w-9" alt="">
                             </div>
                             <div class="flex-grow truncate ms-2">
                                 <h5 class="text-sm font-semibold mb-1">Karen Robinson</h5>
@@ -225,32 +225,32 @@
         <div class="fc-dropdown fc-dropdown-open:opacity-100 hidden opacity-0 w-80 z-50 transition-all duration-300 bg-white shadow-lg border rounded-lg p-2 border-gray-200 dark:border-gray-700 dark:bg-gray-800">
             <div class="grid grid-cols-3 gap-3">
                 <a class="flex flex-col items-center justify-center gap-1.5 py-3 px-6 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    <img src="images/brands/github.png" class="h-6" alt="Github">
+                    <img src="{!! asset('images/brands/github.png') !!}" class="h-6" alt="Github">
                     <span>GitHub</span>
                 </a>
 
                 <a class="flex flex-col items-center justify-center gap-1.5 py-3 px-6 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    <img src="images/brands/bitbucket.png" class="h-6" alt="bitbucket">
+                    <img src="{!! asset('images/brands/bitbucket.png') !!}" class="h-6" alt="bitbucket">
                     <span>Bitbucket</span>
                 </a>
 
                 <a class="flex flex-col items-center justify-center gap-1.5 py-3 px-6 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    <img src="images/brands/dropbox.png" class="h-6" alt="dropbox">
+                    <img src="{!! asset('images/brands/dropbox.png') !!}" class="h-6" alt="dropbox">
                     <span>Dropbox</span>
                 </a>
 
                 <a class="flex flex-col items-center justify-center gap-1.5 py-3 px-6 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    <img src="images/brands/slack.png" class="h-6" alt="slack">
+                    <img src="{!! asset('images/brands/slack.png') !!}" class="h-6" alt="slack">
                     <span>Slack</span>
                 </a>
 
                 <a class="flex flex-col items-center justify-center gap-1.5 py-3 px-6 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    <img src="images/brands/dribbble.png" class="h-6" alt="dribbble">
+                    <img src="{!! asset('images/brands/dribbble.png') !!}" class="h-6" alt="dribbble">
                     <span>Dribbble</span>
                 </a>
 
                 <a class="flex flex-col items-center justify-center gap-1.5 py-3 px-6 rounded-md text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="#">
-                    <img src="images/brands/behance.png" class="h-6" alt="Behance">
+                    <img src="{!! asset('images/brands/behance.png') !!}" class="h-6" alt="Behance">
                     <span>Behance</span>
                 </a>
             </div>
@@ -291,7 +291,7 @@
     <!-- Profile Dropdown Button -->
     <div class="relative">
         <button data-fc-type="dropdown" data-fc-placement="bottom-end" type="button" class="nav-link flex items-center gap-2.5 px-3 bg-black/5 border-x border-black/10">
-            <img src="images/users/avatar-1.jpg" alt="user-image" class="rounded-full h-8">
+            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="user-image" class="rounded-full h-8">
             <span class="md:flex flex-col gap-0.5 text-start hidden">
                 <h5 class="text-sm">Tosha Minner</h5>
                 <span class="text-xs">Founder</span>
@@ -327,7 +327,7 @@
             </a>
 
             <!-- item-->
-            <a href="auth-logout-2.blade.php" class="flex items-center gap-2 py-1.5 px-4 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
+            <a href="{{ route('logout') }}" class="flex items-center gap-2 py-1.5 px-4 text-sm text-gray-800 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300">
                 <i class="ri-logout-box-line text-lg align-middle"></i>
                 <span>Logout</span>
             </a>

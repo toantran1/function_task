@@ -59,7 +59,7 @@
                                                 <div class="flex items-center">
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -69,7 +69,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -135,7 +135,7 @@
                                                 <div class="flex items-center">
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -145,7 +145,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -187,7 +187,7 @@
                                                 <div class="flex items-center">
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -197,7 +197,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -260,7 +260,7 @@
                                                 <div class="flex items-center">
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -270,7 +270,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -312,7 +312,7 @@
                                                 <div class="flex items-center">
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -334,7 +334,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -385,7 +385,7 @@
                                                 <div class="flex items-center">
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -395,7 +395,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -449,7 +449,7 @@
                                                 <div class="flex items-center">
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -459,7 +459,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -469,7 +469,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -536,7 +536,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -578,7 +578,7 @@
                                                 <div class="flex items-center">
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -588,7 +588,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -639,7 +639,7 @@
                                                 <div class="flex items-center">
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Tosha
@@ -649,7 +649,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -659,7 +659,7 @@
 
                                                     <div class="-me-3">
                                                         <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                            <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                            <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                         </a>
                                                         <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                             Brain
@@ -728,7 +728,7 @@
                                             <div class="flex items-center">
                                                 <div class="-me-3">
                                                     <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                        <img src="images/users/avatar-1.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                        <img src="{!! asset('images/users/avatar-1.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                     </a>
                                                     <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                         Tosha
@@ -750,7 +750,7 @@
 
                                                 <div class="-me-3">
                                                     <a href="javascript: void(0);" data-fc-type="tooltip" data-fc-placement="top">
-                                                        <img src="images/users/avatar-5.jpg" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
+                                                        <img src="{!! asset('images/users/avatar-5.jpg') !!}" alt="" class="rounded-full h-8 w-8 hover:-translate-y-0.5 transition-all duration-200">
                                                     </a>
                                                     <div class="bg-slate-700 hidden px-2 py-1 rounded transition-all text-white opacity-0 z-50" role="tooltip">
                                                         Brain
@@ -785,7 +785,7 @@
                                             </div>
 
                                             <div class="flex gap-5">
-                                                <img src="images/users/avatar-3.jpg" alt="" class="h-12 rounded-full">
+                                                <img src="{!! asset('images/users/avatar-3.jpg') !!}" alt="" class="h-12 rounded-full">
                                                 <div class="w-full">
                                                     <h5 class="mb-2 text-gray-500 dark:text-gray-400 font-semibold">Jeremy Tomlinson</h5>
                                                     <p class="font-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
@@ -794,7 +794,7 @@
 
                                                     <div class="mt-5">
                                                         <div class="flex gap-5">
-                                                            <img src="images/users/avatar-4.jpg" alt="" class="h-12 rounded-full">
+                                                            <img src="{!! asset('images/users/avatar-4.jpg') !!}" alt="" class="h-12 rounded-full">
                                                             <div class="w-full">
                                                                 <h5 class="mb-2 text-gray-500 dark:text-gray-400 font-semibold">Thelma Fridley</h5>
                                                                 <p class="font-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
@@ -834,10 +834,10 @@
 
                                                 <div class="flex items-center gap-3">
                                                     <span>
-                                                        <img src="images/small/small-1.jpg" alt="" class="h-12 w-12 rounded-md">
+                                                        <img src="{!! asset('images/small/small-1.jpg') !!}" alt="" class="h-12 w-12 rounded-md">
                                                     </span>
                                                     <div>
-                                                        <a href="javascript:void(0);" class="font-medium">Dashboard-design.jpg</a>
+                                                        <a href="javascript:void(0);" class="font-medium">Dashboard-design.jpg') !!}</a>
                                                         <p class="font-light">3.25 MB</p>
                                                     </div>
                                                 </div>
@@ -885,10 +885,10 @@
     @include('./partials/footer-scripts')
 
     <!-- Sortablejs -->
-    <script src="libs/sortablejs/Sortable.min.js"></script>
+    <script src="{!! asset('libs/sortablejs/Sortable.min.js"></script>
 
     <!-- Dragula Demo Component js -->
-    <script src="js/pages/apps-kanban.js"></script>
+    <script src="{!! asset('js/pages/apps-kanban.js"></script>
 
 </body>
 
