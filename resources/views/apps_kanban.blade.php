@@ -7,8 +7,8 @@
 </head>
 
 <body>
-
     <div class="flex wrapper">
+        @include('./partials/menu')
 
         <!-- ============================================================== -->
         <!-- Start Page Content here -->
@@ -873,7 +873,6 @@
                 </div>
             </main>
 
-
         </div>
         <!-- ============================================================== -->
         <!-- End Page content -->
@@ -884,6 +883,12 @@
     @include('./partials/customizer')
 
     @include('./partials/footer-scripts')
+
+    <!-- Sortablejs -->
+    <script src="libs/sortablejs/Sortable.min.js"></script>
+
+    <!-- Dragula Demo Component js -->
+    <script src="js/pages/apps-kanban.js"></script>
 
 </body>
 
