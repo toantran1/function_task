@@ -82,12 +82,12 @@
 
                 <ul class="sub-menu hidden">
                     <li class="menu-item">
-                        <a href="auth-login.html" class="menu-link">
+                        <a href="{{ route('user.add_new') }}" class="menu-link">
                             <span class="menu-text">Add New User</span>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="auth-login-2.html" class="menu-link">
+                        <a href="{{ route('user.user_list') }}" class="menu-link">
                             <span class="menu-text">List User</span>
                         </a>
                     </li>
