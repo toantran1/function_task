@@ -15,19 +15,13 @@
         <!-- ============================================================== -->
 
         <div class="page-content">
-
             @include('./partials/topbar')
-
             <main class="p-6">
-
                 @include("./partials/page-title")
-
                 <div class="grid w-full">
                     <div class="overflow-hidden text-gray-700 dark:text-slate-400">
                         <div class="flex overflow-x-auto custom-scroll gap-6 pb-4 h-[calc(100vh-235px)]">
-
                             <div class="flex flex-col flex-shrink-0 w-80 border rounded-md border-gray-200 dark:border-gray-700 p-4">
-
                                 <h5 class="uppercase mb-4">ToDo (3)</h5>
                                 <div class="flex flex-col gap-4 kanban-board custom-scroll overflow-x-hidden overflow-y-auto px-1 h-full" id="kanbanborad-one">
 
@@ -862,33 +856,24 @@
                                             </div> <!-- border-end -->
                                         </div> <!-- tabs-with-underline-2 end -->
                                     </div>
-                                </div> <!-- tab end -->
+                                </div> 
 
                                 <div class="text-center mt-2 font-medium">
                                     <a href="javascript:void(0);" class="text-danger">Load more </a>
-                                </div> <!-- link end -->
+                                </div> 
                             </div>
                         </div>
                     </div>
                 </div>
             </main>
-
         </div>
-        <!-- ============================================================== -->
-        <!-- End Page content -->
-        <!-- ============================================================== -->
-
     </div>
 
     @include('./partials/customizer')
-
     @include('./partials/footer-scripts')
 
-    <!-- Sortablejs -->
-    <script src="{!! asset('libs/sortablejs/Sortable.min.js"></script>
-
-    <!-- Dragula Demo Component js -->
-    <script src="{!! asset('js/pages/apps-kanban.js"></script>
+    <script src="{!! asset('libs/sortablejs/Sortable.min.js') !!}"></script>
+    <script src="{!! asset('js/pages/apps-kanban.js') !!}"></script>
 
 </body>
 

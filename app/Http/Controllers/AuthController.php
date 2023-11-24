@@ -53,6 +53,6 @@ class AuthController extends Controller
         Session::flush();
         Auth::logout();
   
-        return response()->view('admin.login')->header('Cache-Control', 'no-cache, no-store, must-revalidate');
+        return redirect('admin/login');
     }
 }
