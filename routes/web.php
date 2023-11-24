@@ -25,6 +25,16 @@ Route::group(['middleware' => 'revalidate'], function () {
         return view('admin.register');
     });
 
+    //authorized
+    Route::group(['middleware' => ['revalidate','admin']], function () {
+        Route::get('admin/task/list', function () {
+            return view('task.list_task');
+        })->name('task.list');
+        Route::get('admin/task/detail', function () {
+            return view('task.list_detail');
+        })->name('task.detail');
+    });
+
     Route::group(['middleware' => ['web']], function () {
         Route::post('post-login', [AuthController::class, 'adminLogin'])->name('login.post'); 
         Route::post('post-registration', [AuthController::class, 'adminRegistration'])->name('register.post'); 
@@ -32,7 +42,8 @@ Route::group(['middleware' => 'revalidate'], function () {
     });
 
     Route::group(['middleware' => ['auth']], function () {
-        Route::get('admin/dashboard', [AuthController::class, 'dashboard']); 
+        Route::get('admin/dashboard', [AuthController::class, 'dashboard'])->name('dashboard'); 
     });
+   
 });
 
