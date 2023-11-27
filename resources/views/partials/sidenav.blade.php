@@ -53,7 +53,7 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="{{ route('task.detail') }}" class="menu-link">
+                        <a href="{{ route('task.add_task_page') }}" class="menu-link">
                             <span class="menu-text">Add New Task</span>
                         </a>
                     </li>

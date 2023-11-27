@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,19 +29,23 @@ Route::group(['middleware' => 'revalidate'], function () {
 
     //authorized
     Route::group(['middleware' => ['revalidate','admin']], function () {
+        //user
         Route::get('admin/task/list', function () {
             return view('task.list_task');
         })->name('task.list');
-        Route::get('admin/task/detail', function () {
-            return view('task.list_detail');
-        })->name('task.detail');
         Route::get('admin/add-user', function () {
             return view('user.user_add_new');
         })->name('user.add_new');
-       
         Route::get('admin/list-user', function () {
             return view('user.user_list');
         })->name('user.user_list');
+
+        //task
+        Route::get('admin/task/add-new-task', function () {
+            return view('task.list_add_new');
+        })->name('task.add_task_page');
+        Route::post('admin/task/post-task', [TaskController::class, 'store'])->name('create.task');
+        Route::post('admin/update-task-status',  [TaskController::class, 'updateStatus']);
     });
 
     Route::group(['middleware' => ['web']], function () {
