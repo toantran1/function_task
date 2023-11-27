@@ -37,7 +37,7 @@
 
 
                                                 <h5 class="my-2">
-                                                    <a href="#" data-fc-type="modal" data-fc-target="task-detail-modal" type="button" class="text-base text-gray-700 dark:text-slate-400 font-medium">{{ $task->title }}</a>
+                                                    <a href="#" id="" data-task-id="{{ $task->id }}" data-fc-type="modal" data-fc-target="task-detail-modal" type="button" class="text-base text-gray-700 dark:text-slate-400 font-medium popup_trigger">{{ $task->title }}</a>
                                                 </h5>
 
                                                 <div class="mt-5">
@@ -113,7 +113,7 @@
 
 
                                                 <h5 class="my-2">
-                                                    <a href="#" data-fc-type="modal" data-fc-target="task-detail-modal" type="button" class="text-base text-gray-700 dark:text-slate-400 font-medium">{{ $task->title }}</a>
+                                                    <a href="#" id="" data-task-id="{{ $task->id }}" data-fc-type="modal" data-fc-target="task-detail-modal" type="button" class="text-base text-gray-700 dark:text-slate-400 font-medium popup_trigger">{{ $task->title }}</a>
                                                 </h5>
 
                                                 <div class="mt-5">
@@ -188,7 +188,7 @@
 
 
                                                 <h5 class="my-2">
-                                                    <a href="#" data-fc-type="modal" data-fc-target="task-detail-modal" type="button" class="text-base text-gray-700 dark:text-slate-400 font-medium">{{ $task->title }}</a>
+                                                    <a href="#" id="" data-task-id="{{ $task->id }}" data-fc-type="modal" data-fc-target="task-detail-modal" type="button" class="text-base text-gray-700 dark:text-slate-400 font-medium popup_trigger">{{ $task->title }}</a>
                                                 </h5>
 
                                                 <div class="mt-5">
@@ -263,7 +263,7 @@
 
 
                                                 <h5 class="my-2">
-                                                    <a href="#" data-fc-type="modal" data-fc-target="task-detail-modal" type="button" class="text-base text-gray-700 dark:text-slate-400 font-medium">{{ $task->title }}</a>
+                                                    <a href="#" id="" data-task-id="{{ $task->id }}" data-fc-type="modal" data-fc-target="task-detail-modal" type="button" class="text-base text-gray-700 dark:text-slate-400 font-medium popup_trigger">{{ $task->title }}</a>
                                                 </h5>
 
                                                 <div class="mt-5">
@@ -328,9 +328,10 @@
                 <div id="task-detail-modal" class="fc-modal fixed start-0 top-0 z-50 hidden fc-modal:flex h-full w-full items-center overflow-y-auto">
                     <div class="pointer-events-none relative w-auto -translate-y-5 fc-modal-open:translate-y-0 fc-modal-open:opacity-100 opacity-0 transition-all duration-300 ease-in-out sm:max-w-2xl md:max-w-3xl sm:w-full min-h-full flex items-center sm:mx-auto">
                         <div class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white shadow-lg dark:bg-gray-800 m-4">
+                            
                             <div class="flex justify-between items-center py-2.5 px-4 border-b dark:border-gray-700">
                                 <h3 class="font-medium text-gray-800 dark:text-white text-lg">
-                                    iOS App home page
+                                    {{ $task->title }}
                                     <span class="inline-flex items-center gap-1.5 p-1 rounded-md text-xs font-medium bg-danger text-white ms-3">High</span>
                                 </h3>
 
@@ -342,7 +343,7 @@
                             <div class="px-4 py-8 overflow-y-auto">
                                 <h5 class="mb-1">Description:</h5>
                                 <p class="font-light text-gray-500 dark:text-gray-400">
-                                    Voluptates, illo, iste itaque voluptas corrupti ratione reprehenderit magni similique? Tempore, quos delectus asperiores libero voluptas quod perferendis! Voluptate, quod illo rerum? Lorem ipsum dolor sit amet. With supporting text below as a natural lead-in to additional contenposuere erat a ante.
+                                    
                                 </p>
 
                                 <div class="my-7">
@@ -353,7 +354,7 @@
                                         </div> <!-- col end -->
 
                                         <div class="col-span-1">
-                                            <h5 class="mb-2 text-gray-600">Due Date</h5>
+                                            <h5 class="mb-2 text-gray-600">Start Date</h5>
                                             <p class="font-normal text-gray-500 dark:text-gray-400">22 December 2023 <small class="font-light">1:00 PM</small></p>
                                         </div> <!-- col end -->
 
@@ -395,112 +396,6 @@
                                         </div> <!-- col end -->
                                     </div> <!-- grid end -->
                                 </div>
-
-                                <div data-fc-type="tab">
-                                    <nav class="flex space-x-5 border-b border-gray-300 dark:border-gray-700" aria-label="Tabs">
-                                        <button data-fc-target="#tabs-with-underline-1" type="button" class="fc-tab-active:font-semibold fc-tab-active:border-primary fc-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-2 border-transparent -mb-px transition-all text-sm whitespace-nowrap text-gray-500 dark:text-gray-400 hover:text-primary active">
-                                            Comments
-                                        </button> <!-- button end -->
-                                        <button data-fc-target="#tabs-with-underline-2" type="button" class="fc-tab-active:font-semibold fc-tab-active:border-primary fc-tab-active:text-primary py-4 px-1 inline-flex items-center gap-2 border-b-2 border-transparent -mb-px transition-all text-sm whitespace-nowrap text-gray-500 dark:text-gray-400 hover:text-primary">
-                                            Files
-                                        </button> <!-- button end -->
-                                    </nav>
-
-                                    <div class="mt-5 overflow-hidden">
-                                        <div id="tabs-with-underline-1" class="active fc-tab-active:opacity-100 opacity-0 transition-all duration-300 transform" role="tabpanel" aria-labelledby="tabs-with-underline-item-1">
-                                            <textarea class="form-input mt-2" id="example-textarea" placeholder="Write message" rows="4"></textarea>
-                                            <div class="flex items-center justify-end">
-                                                <div class="mb-2 inline-block">
-                                                    <button type="button" class="btn btn-link text-xl"><i class="ri-attachment-2"></i></button>
-                                                </div>
-                                                <div class="mb-2 inline-block">
-                                                    <button type="button" class="btn bg-primary text-white btn-sm">Submit</button>
-                                                </div>
-                                            </div>
-
-                                            <div class="flex gap-5">
-                                                <img src="{!! asset('images/users/avatar-3.jpg') !!}" alt="" class="h-12 rounded-full">
-                                                <div class="w-full">
-                                                    <h5 class="mb-2 text-gray-500 dark:text-gray-400 font-semibold">Jeremy Tomlinson</h5>
-                                                    <p class="font-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                                                        vulputate at, tempus viverra turpis.</p>
-                                                    <!-- chat-end -->
-
-                                                    <div class="mt-5">
-                                                        <div class="flex gap-5">
-                                                            <img src="{!! asset('images/users/avatar-4.jpg') !!}" alt="" class="h-12 rounded-full">
-                                                            <div class="w-full">
-                                                                <h5 class="mb-2 text-gray-500 dark:text-gray-400 font-semibold">Thelma Fridley</h5>
-                                                                <p class="font-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                                                                    vulputate at, tempus viverra turpis.</p>
-                                                            </div>
-                                                        </div> <!-- chat-end -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> <!-- tabs-with-underline-1 end -->
-
-                                        <div id="tabs-with-underline-2" class="hidden fc-tab-active:opacity-100 transition-all duration-300 transform opacity-0" role="tabpanel" aria-labelledby="tabs-with-underline-item-2">
-                                            <div class="border rounded-md border-gray-300 dark:border-gray-700 p-3 mb-2">
-                                                <div class="flex justify-between items-center">
-                                                    <a href="javascript:void(0);" class="btn btn-link">
-                                                        <i class="ri-download-line text-lg"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="flex items-center gap-3">
-                                                    <span class="flex items-center justify-center bg-primary text-white font-semibold rounded-md w-12 h-12">
-                                                        .ZIP
-                                                    </span>
-                                                    <div>
-                                                        <a href="javascript:void(0);" class="font-medium">-admin-design.zip</a>
-                                                        <p class="font-light">2.3 MB</p>
-                                                    </div>
-                                                </div>
-                                            </div> <!-- border-end -->
-
-                                            <div class="border rounded-md border-gray-300 dark:border-gray-700 p-3 mb-2">
-                                                <div class="flex justify-between items-center">
-                                                    <a href="javascript:void(0);" class="btn btn-link">
-                                                        <i class="ri-download-line text-lg"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="flex items-center gap-3">
-                                                    <span>
-                                                        <img src="{!! asset('images/small/small-1.jpg') !!}" alt="" class="h-12 w-12 rounded-md">
-                                                    </span>
-                                                    <div>
-                                                        <a href="javascript:void(0);" class="font-medium">Dashboard-design.jpg') !!}</a>
-                                                        <p class="font-light">3.25 MB</p>
-                                                    </div>
-                                                </div>
-                                            </div> <!-- border-end -->
-
-                                            <div class="border rounded-md border-gray-300 dark:border-gray-700 p-3 mb-2">
-                                                <div class="flex justify-between items-center">
-                                                    <a href="javascript:void(0);" class="btn btn-link">
-                                                        <i class="ri-download-line text-lg"></i>
-                                                    </a>
-                                                </div>
-
-                                                <div class="flex items-center gap-3">
-                                                    <span class="flex items-center justify-center bg-secondary text-white font-semibold rounded-md w-12 h-12">
-                                                        .MP4
-                                                    </span>
-                                                    <div>
-                                                        <a href="javascript:void(0);" class="font-medium">Admin-bug-report.mp4</a>
-                                                        <p class="font-light">7.05 MB</p>
-                                                    </div>
-                                                </div>
-                                            </div> <!-- border-end -->
-                                        </div> <!-- tabs-with-underline-2 end -->
-                                    </div>
-                                </div> 
-
-                                <div class="text-center mt-2 font-medium">
-                                    <a href="javascript:void(0);" class="text-danger">Load more </a>
-                                </div> 
                             </div>
                         </div>
                     </div>
@@ -519,7 +414,7 @@
     <script src="{!! asset('https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js') !!}"></script>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      $(document).ready(function() {
         const taskLists = document.querySelectorAll('.kanban-board');
 
             taskLists.forEach(taskList => {
@@ -554,6 +449,28 @@
                 error: function(error) {
                     console.error(error);
                 },
+            });
+        }
+
+        $('.popup_trigger').on('click', function () {
+            const task_id = $(this).data('task-id');
+            console.log(task_id);
+            fetchTaskDetails(task_id);
+        });
+
+        function fetchTaskDetails(task_id) {
+            $.ajax({
+                url: `/task/${task_id}`,
+                method: 'GET',
+                success: function (data) {
+                    // // Assuming you have a modal with ID 'taskDetailModal'
+                    // $('#task-detail-modal .modal-body').html(data);
+                    // $('#task-detail-modal').modal('show');
+                    console.log(data);
+                },
+                error: function (error) {
+                    console.error('Error fetching task details:', error);
+                }
             });
         }
     });

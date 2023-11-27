@@ -45,7 +45,9 @@ Route::group(['middleware' => 'revalidate'], function () {
             return view('task.list_add_new');
         })->name('task.add_task_page');
         Route::post('admin/task/post-task', [TaskController::class, 'store'])->name('create.task');
-        Route::post('admin/update-task-status',  [TaskController::class, 'updateStatus']);
+        Route::post('admin/update-task-status', [TaskController::class, 'updateStatus']);
+        
+        Route::get('task/{taskId}', [TaskController::class, 'show'])->name('tasks.show');
     });
 
     Route::group(['middleware' => ['web']], function () {
