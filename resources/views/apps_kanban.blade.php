@@ -327,11 +327,13 @@
                 <!--Verically centered modal-->
                 <div id="task-detail-modal" class="fc-modal fixed start-0 top-0 z-50 hidden fc-modal:flex h-full w-full items-center overflow-y-auto">
                     <div class="pointer-events-none relative w-auto -translate-y-5 fc-modal-open:translate-y-0 fc-modal-open:opacity-100 opacity-0 transition-all duration-300 ease-in-out sm:max-w-2xl md:max-w-3xl sm:w-full min-h-full flex items-center sm:mx-auto">
-                        <div class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white shadow-lg dark:bg-gray-800 m-4">
-                            
+                        <div class="pointer-events-auto relative flex w-full flex-col rounded-md bg-white shadow-lg dark:bg-gray-800 m-4 pb-4">
+                        <form method="POST" id="update-task-form" >
+                            @csrf
+                            @method('PUT')
                             <div class="flex justify-between items-center py-2.5 px-4 border-b dark:border-gray-700">
                                 <h3 class="font-medium text-gray-800 dark:text-white text-lg">
-                                    {{ $task->title }}
+                                    <input type="text" id="title" name="title" class="custom-input" />
                                     <span class="inline-flex items-center gap-1.5 p-1 rounded-md text-xs font-medium bg-danger text-white ms-3">High</span>
                                 </h3>
 
@@ -340,22 +342,22 @@
                                 </button> <!-- close-button end -->
                             </div> <!-- flex end -->
 
-                            <div class="px-4 py-8 overflow-y-auto">
+                            <div class="px-4 pt-5 pb-4 overflow-y-auto">
                                 <h5 class="mb-1">Description:</h5>
                                 <p class="font-light text-gray-500 dark:text-gray-400">
-                                    
+                                    <input type="text" id="description" name="description" class="custom-input" />
                                 </p>
 
                                 <div class="my-7">
                                     <div class="grid sm:grid-cols-3 gap-6">
                                         <div class="col-span-1">
                                             <h5 class="mb-2 text-gray-600">Create Date</h5>
-                                            <p class="font-normal text-gray-500 dark:text-gray-400">17 March 2023 <small class="font-light">1:00 PM</small></p>
+                                            <span class="font-normal text-gray-500 dark:text-gray-400 date-created"></span>
                                         </div> <!-- col end -->
 
                                         <div class="col-span-1">
                                             <h5 class="mb-2 text-gray-600">Start Date</h5>
-                                            <p class="font-normal text-gray-500 dark:text-gray-400">22 December 2023 <small class="font-light">1:00 PM</small></p>
+                                            <input class="form-input" name="date" id="date_start" type="date" name="date" required>
                                         </div> <!-- col end -->
 
                                         <div class="col-span-1">
@@ -396,7 +398,22 @@
                                         </div> <!-- col end -->
                                     </div> <!-- grid end -->
                                 </div>
+                                <!-- <div>
+                                    <label class="mb-2" for="choices-multiple-remove-button">Users</label>
+                                    <select class="form-input" name="choices-multiple-remove-button" id="choices-multiple-remove-button" placeholder="This is a placeholder" multiple>
+                                        <option value="Choice 1" >Choice 1</option>
+                                    </select>
+                                </div> -->
+                                <div class="flex justify-end">
+                                    <div class="mr-3">
+                                        <button type="submit" name="action" value="update" class="btn bg-primary text-white">Update</button>
+                                    </div>
+                                    <div class="">
+                                        <button type="submit" name="action" value="delete" class="btn bg-danger text-white">Delete</button>
+                                    </div>
+                                </div>
                             </div>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -407,11 +424,6 @@
     @include('./partials/customizer')
     @include('./partials/footer-scripts')
 
-    <script src="{!! asset('libs/sortablejs/Sortable.min.js') !!}"></script>
-    <script src="{!! asset('js/pages/apps-kanban.js') !!}"></script>
-
-    <script src="{!! asset('https://code.jquery.com/jquery-3.6.4.min.js') !!}"></script>
-    <script src="{!! asset('https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js') !!}"></script>
 
     <script>
       $(document).ready(function() {
@@ -460,13 +472,17 @@
 
         function fetchTaskDetails(task_id) {
             $.ajax({
-                url: `/task/${task_id}`,
+                url: `/tasks/${task_id}`,
                 method: 'GET',
                 success: function (data) {
-                    // // Assuming you have a modal with ID 'taskDetailModal'
-                    // $('#task-detail-modal .modal-body').html(data);
-                    // $('#task-detail-modal').modal('show');
-                    console.log(data);
+                    $('#update-task-form').attr('action', `/tasks/${data.id}`);
+                    $('#title').val(data.title);
+                    $('#description').val(data.description);
+                    $('#date_start').val(data.date_start);
+                    const createdDate = new Date(data.created_at);
+                    const formattedDate = createdDate.toLocaleDateString('en-US'); // You can specify your locale
+
+                    $('.date-created').text(formattedDate);
                 },
                 error: function (error) {
                     console.error('Error fetching task details:', error);
@@ -474,6 +490,40 @@
             });
         }
     });
+
+    // axios.get('/api/admin/list-user')
+    // .then(response => {
+    //     const users = response.data;
+
+    //     if (users && Array.isArray(users)) {
+    //         return users;
+    //         // users.forEach(user => {
+    //         //     const option = document.createElement('option');
+    //         //     option.value = user.id;
+    //         //     option.text = user.name; // Thay thế bằng trường dữ liệu mong muốn
+    //         //     document.getElementById('choices-multiple-remove-button').appendChild(option);
+    //         // });
+    //     } else {
+    //         console.error('Invalid or empty users array in the API response.');
+    //     }
+    // })
+    // .catch(error => {
+    //     console.error('Error fetching users:', error);
+    // });
+    function deleteTask(taskId) {
+    if (confirm('Are you sure you want to delete this task?')) {
+        // Tạo một yêu cầu AJAX để xóa task
+        axios.delete(`/tasks/${taskId}`)
+            .then(response => {
+                // Xử lý phản hồi thành công nếu cần
+                console.log(response.data);
+            })
+            .catch(error => {
+                // Xử lý lỗi nếu có
+                console.error('Error deleting task:', error);
+            });
+    }
+}
     </script>
 
 </body>

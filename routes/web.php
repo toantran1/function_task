@@ -47,7 +47,10 @@ Route::group(['middleware' => 'revalidate'], function () {
         Route::post('admin/task/post-task', [TaskController::class, 'store'])->name('create.task');
         Route::post('admin/update-task-status', [TaskController::class, 'updateStatus']);
         
-        Route::get('task/{taskId}', [TaskController::class, 'show'])->name('tasks.show');
+        // Route::get('task/{taskId}', [TaskController::class, 'show'])->name('tasks.show');
+
+        // Route::post('/update-task/{taskId}', [TaskController::class, 'update'])->name('task.update');
+        Route::resource('tasks', TaskController::class);
     });
 
     Route::group(['middleware' => ['web']], function () {

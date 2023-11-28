@@ -15,7 +15,13 @@ class TaskController extends Controller
      */
     public function index()
     {
-        //
+        try {
+            $tasks = Task::all();
+            return response()->json($tasks);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 500);
+        }
+        // return redirect()->route('dashboard');
     }
 
     public function updateStatus(Request $request)
@@ -76,8 +82,7 @@ class TaskController extends Controller
     public function show($id)
     {
         $task = Task::findOrFail($id);
-
-        return view('dashboard', compact('task'));
+         return response()->json($task);
     }
 
     /**
@@ -100,7 +105,13 @@ class TaskController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+        ]);
+        $task = Task::findOrFail($id);
+        $task->update($request->all());
+
+        return redirect()->route('tasks.index')->with('success', 'Task updated successfully');
     }
 
     /**
@@ -111,6 +122,10 @@ class TaskController extends Controller
      */
     public function destroy($id)
     {
-        //
+       
+            $task = Task::findOrFail($id); // Tìm task theo ID, nếu không tìm thấy sẽ throw exception
+            $task->delete(); // Xóa task
+            return redirect()->route('task.list')->with('success', 'Task updated successfully');
+        
     }
 }

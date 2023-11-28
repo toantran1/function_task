@@ -1,1 +1,17 @@
 
+.custom-input {
+    border: none;
+    outline: none; 
+    width: -webkit-fill-available;
+    box-sizing: content-box;
+}
+
+.choices__list--multiple .choices__item { 
+    border-radius: 0.25rem !important;
+    background-color: #3e60d5 !important;
+    border-color: #3e60d5 !important;
+}
+
+.mr-3 {
+    margin-right: 10px;
+}
